@@ -18,7 +18,7 @@ k=[]
 for tweet in soup.findAll('div',{"class":'content'}):
 	k.append(tweet.find('p').text)
 
-
+#writing the tweets
 #tweets save in file
 with open('/home/lakshay/Music/filename.csv','a') as csv_file:
 	writer=csv.writer(csv_file)
